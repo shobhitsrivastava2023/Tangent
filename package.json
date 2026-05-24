@@ -1,0 +1,17 @@
+{
+  "name": "tangent",
+  "version": "1.0.0",
+  "workspaces": ["packages/*"],
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev:cli" : "bun run --watch packages/cli/src/index.tsx"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
